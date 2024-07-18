@@ -3,100 +3,756 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Real estate</title>
+    <title>Residential Architecture – Tadao</title>
     <!--css-->
+    <!--bootstrap cdn link-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
     <!--icons-->
     <link
-    rel="icon"
-    href="https://livedemo00.template-help.com/wordpress_53001/wp-content/themes/theme53001/favicon.ico"
-    type="image/x-icon"
-  />
+      rel="icon"
+      href="https://tadao.qodeinteractive.com/wp-content/uploads/2023/08/cropped-favicon-192x192.png"
+      sizes="192x192"
+    />
+    <!--fonts-->
+    <link
+      rel="stylesheet"
+      id="google-fonts-1-css"
+      href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap&amp;ver=6.5.5"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="font-awesome-css"
+      href="https://tadao.qodeinteractive.com/wp-content/plugins/tadao-core/inc/icons/font-awesome/assets/css/all.min.css?ver=6.5.5"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="tadao-google-fonts-css"
+      href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C300%2C400%2C500%2C600%2C700%7CKhand%3A100%2C300%2C400%2C500%2C600%2C700&amp;subset=latin-ext&amp;display=swap&amp;ver=1.0.0"
+      type="text/css"
+      media="all"
+    />
   </head>
-  <body class="relative font-normal font-sans text-[#928e92] text-sm">
-    <!--BEGIN HEADER-->
-    <div class="w-full  bg-black">
-      <div class="container  mx-auto md:p-0 md:flex md:justify-around">
-        <!--BEGIN LOGO-->
-        <div class="md:pt-12">
-          <img src="../assets/logo/logo.webp" alt="24-Real-estate">
+  <body class="relative font-normal bg-black text-sm">
+    <!--page wrapper-->
+    <main class="max-w-[1920px] mx-auto bg-black overflow-hidden">
+      <!--BEGIN HEADER-->
+      <div
+        class="w-full mx-auto p-3 sticky md:fixed z-10 bg-black bg-opacity-20"
+      >
+        <div class="container mx-auto md:flex md:justify-between">
+          <!--BEGIN LOGO-->
+          <div>
+            <img
+              class="w-16 inline-block"
+              src="../assets/logo/side-area-logo.png"
+            />
+            <h1 class="inline-block ml-2 font-normal text-2xl md:hidden">
+              Residential Architecture
+            </h1>
+          </div>
+          <!--END LOGO-->
+          <!-- BEGIN MAIN NAVIGATION -->
+          <select
+            name="nav"
+            id="m-nav"
+            class="w-full bg-[#8E7861] border-solid border border-[#8E7861] rounded text-black p-1 mx-auto mt-3 mb-0 md:hidden md:shrink-0"
+          >
+            <option value="#">Navigate to ...</option>
+            <option value="#">HOME</option>
+            <option value="#" selected="selected">–Main Home</option>
+            <option value="#">–Architecture Studio</option>
+            <option value="#">–Residential Architecture</option>
+            <option value="#">–Architecture Home</option>
+            <option value="#">–Interior Design Studio</option>
+            <option value="#">–Metro Showcase</option>
+            <option value="#">–Furniture Design</option>
+            <option value="#">–Architecture Bureau</option>
+            <option value="#">–House Décor</option>
+            <option value="#">–Landing</option>
+            <option value="#">PAGES</option>
+            <option value="#">–About us</option>
+            <option value="#">–Our Services</option>
+            <option value="#">–Our Team</option>
+            <option value="#">–Team Member</option>
+            <option value="#">–Our Partners</option>
+            <option value="#">–Get In Touch</option>
+            <option value="#">–Contact Us</option>
+            <option value="#">–FAQ Page</option>
+            <option value="#">–Coming Soon</option>
+            <option value="#">PORTFOLIO</option>
+            <option value="#">–List Types</option>
+            <option value="#">–Layouts</option>
+            <option value="#">–Hover Types</option>
+            <option value="#">–Single Types</option>
+            <option value="#">Blog</option>
+            <option value="#">–Right Sidebar</option>
+            <option value="#">–Left Sidebar</option>
+            <option value="#">–No Sidebar</option>
+            <option value="#">–Post Formats</option>
+            <option value="#">Shop Pages</option>
+            <option value="#">–Product Single</option>
+            <option value="#">–Product List</option>
+            <option value="#">–Shop Pages</option>
+          </select>
+          <!--nav-->
+          <nav class="hidden md:flex md:justify-between md:gap-1">
+            <div class="relative group">
+              <a
+                href="#"
+                class="block py-4 px-2 text-[#8E7861] text-xl font-primary"
+                >HOME</a
+              >
+              <!--drop down-->
+              <div
+                class="hidden group-hover:block w-60 text-center absolute top-[60px] right-0 bg-black text-white border border-[#8E7861] p-1"
+              >
+                <div class="py-1">Main Home</div>
+                <div class="py-1">Architecture Studio</div>
+                <div class="py-1">Residential Architecture</div>
+                <div class="py-1">Architecture Home</div>
+                <div class="py-1">Interior Design Studio</div>
+                <div class="py-1">Metro Showcase</div>
+                <div class="py-1">Furniture Design</div>
+                <div class="py-1">Architecture Bureau</div>
+                <div class="py-1">House Décor</div>
+                <div class="py-1">Landing</div>
+              </div>
+            </div>
+            <div class="relative group">
+              <a
+                href="#"
+                class="block py-4 px-2 text-[#8E7861] text-xl font-primary"
+                >PAGES</a
+              >
+              <!--drop down-->
+              <div
+                class="hidden group-hover:block w-40 text-center absolute top-[60px] right-0 bg-black text-white border border-[#8E7861] p-1"
+              >
+                <div class="py-1">About us</div>
+                <div class="py-1">Our Services</div>
+                <div class="py-1">Our Team</div>
+                <div class="py-1">Team Member</div>
+                <div class="py-1">Our Partners</div>
+                <div class="py-1">Get In Touch</div>
+                <div class="py-1">Contact Us</div>
+                <div class="py-1">FAQ Page</div>
+                <div class="py-1">Coming Soon</div>
+              </div>
+            </div>
+            <div class="relative group">
+              <a
+                href="#"
+                class="block py-4 px-2 text-[#8E7861] text-xl font-primary"
+                >PORTFOLIO</a
+              >
+              <!--drop down-->
+              <div
+                class="hidden group-hover:block w-40 text-center absolute top-[60px] right-0 bg-black text-white border border-[#8E7861] p-1"
+              >
+                <div class="py-1">List Types</div>
+                <div class="py-1">Layouts</div>
+                <div class="py-1">Hover Types</div>
+                <div class="py-1">Single Types</div>
+              </div>
+            </div>
+            <div class="relative group">
+              <a
+                href="#"
+                class="block py-4 px-2 text-[#8E7861] text-xl font-primary"
+                >BLOG</a
+              >
+              <!--drop down-->
+              <div
+                class="hidden group-hover:block w-40 text-center absolute top-[60px] right-0 bg-black text-white border border-[#8E7861] p-1"
+              >
+                <div class="py-1">Right Sidebar</div>
+                <div class="py-1">Left Sidebar</div>
+                <div class="py-1">No Sidebar</div>
+                <div class="py-1">Post Formats</div>
+              </div>
+            </div>
+            <div class="relative group">
+              <a
+                href="#"
+                class="block py-4 px-2 text-[#8E7861] text-xl font-primary"
+                >SHOP</a
+              >
+              <!--drop down-->
+              <div
+                class="hidden group-hover:block w-40 text-center absolute top-[60px] right-0 bg-black text-white border border-[#8E7861] p-1"
+              >
+                <div class="py-1">Product Single</div>
+                <div class="py-1">Product List</div>
+                <div class="py-1">Shop Pages</div>
+              </div>
+            </div>
+          </nav>
+          <!-- END MAIN NAVIGATION -->
         </div>
-        <!--END LOGO-->
-        <!-- BEGIN MAIN NAVIGATION -->
-        <select
-          name="nav"
-          id="m-nav"
-          class="w-full bg-[#ddd] border-solid border  border-[#e4e4e4] rounded text-[#928e92] p-1 mx-auto mt-4 md:hidden md:shrink-0"
-        >
-          <option value="#">Navigate to ...</option>
-          <option value="# " selected="selected">Home</option>
-          <option value="#">About Us</option>
-          <option value="#">–Testimonials</option>
-          <option value="#">–FAQs</option>
-          <option value="#">–Archives</option>
-          <option value="#">Our services</option>
-          <option value="#">–Our services 2</option>
-          <option value="#">–Our services 3</option>
-          <option value="#">––category1</option>
-          <option value="#">––category2</option>
-          <option value="#">––category3</option>
-          <option value="#">–Our services 4</option>
-          <option value="#">Blog</option>
-          <option value="#">Contacts</option>
-        </select>
-        <nav class="hidden md:flex md:justify-evenly md:gap-1">
-          <a
-            href="#"
-            class="py-[54px] px-[14px] bg-[#27b6de] text-white text-xl font-semibold"
-            >HOME</a
-          >
-          <!--DROP DOWN-->
-          <div class="relative group">
-            <a
-              href="#"
-              class="block py-[54px] px-[14px] bg-inherit text-white text-xl font-semibold hover:bg-[#27b6de] hover:transition-colors hover:duration-500"
-              >ABOUT US</a
-            >
-
-            <div
-              class="hidden group-hover:block w-[170px] text-center absolute top-[133px] right-0 bg-[#1882a0] text-white font-thin p-[5px]"
-            >
-              <div>Testimonials</div>
-              <div>FAQs</div>
-              <div>Archives</div>
-            </div>
-          </div>
-          <div class="relative group">
-            <a
-              href="#"
-              class="block py-[54px] px-[14px] bg-inherit text-white text-xl font-bold hover:bg-[#27b6de] hover:transition-all hover:duration-500 hover:ease-linear"
-              >OUR SERVICES</a
-            >
-            <div
-              class="hidden group-hover:block w-[170px] text-center absolute top-[133px] right-0 bg-[#1882a0] text-white font-thin p-[5px]"
-            >
-              <div>OUR SERVICES 2</div>
-              <div>OUR SERVICES 3</div>
-              <div>OUR SERVICES 4</div>
-            </div>
-          </div>
-
-
-          <a
-            href="#"
-            class="py-[54px] px-[14px] bg-inherit text-white text-xl font-semibold hover:bg-[#27b6de] hover:transition-all hover:duration-500 hover:ease-linear"
-            >BLOG</a
-          >
-          <a
-            href="#"
-            class="py-[54px] px-[14px] bg-inherit text-white text-xl font-semibold hover:bg-[#27b6de] hover:transition-all hover:duration-500 hover:ease-linear"
-            >CONTACTS</a
-          >
-        </nav>
-        <!-- END MAIN NAVIGATION -->
-        
       </div>
-    </div>
-    
+      <!--END HEADER-->
+      <!--BEGIN CAROUSEL SLIDER-->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div id="hero-carousel" class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img
+              src="../assets/bg/h1-img-1.jpg"
+              class="d-block w-100 c-img"
+              alt="..."
+            />
+            <div
+              class="carousel-caption top-24 -left-7 ml-5 md:top-60 md:-left-60"
+            >
+              <h2 class="text-white text-7xl">
+                C&nbsp;O&nbsp;N&nbsp;T&nbsp;E&nbsp;M&nbsp;P&nbsp;O&nbsp;R&nbsp;A&nbsp;R&nbsp;Y
+              </h2>
+              <h2 class="text-white text-7xl">
+                U&nbsp;R&nbsp;B&nbsp;A&nbsp;N&nbsp;I&nbsp;S&nbsp;M
+              </h2>
+              <h2 class="text-white text-7xl mb-3">
+                L&nbsp;A&nbsp;N&nbsp;D&nbsp;S&nbsp;C&nbsp;A&nbsp;P&nbsp;E
+              </h2>
+              <p
+                class="font-normal font-secondary w-[260px] mt-5 leading-6 mx-auto md:w-[400px]"
+              >
+                Duis aute irure dolor in reprehenderit in voluptate veli esse
+                cillum dolore eu fugiat nulla pariatur ecepteur sint occaeca.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img
+              src="../assets/bg/h1-img-10.jpg"
+              class="d-block w-100 c-img"
+              alt="..."
+            />
+            <div
+              class="carousel-caption top-24 -left-7 ml-5 md:top-60 md:-left-60"
+            >
+              <h2 class="text-white text-7xl">
+                C&nbsp;O&nbsp;N&nbsp;T&nbsp;E&nbsp;M&nbsp;P&nbsp;O&nbsp;R&nbsp;A&nbsp;R&nbsp;Y
+              </h2>
+              <h2 class="text-white text-7xl">
+                U&nbsp;R&nbsp;B&nbsp;A&nbsp;N&nbsp;I&nbsp;S&nbsp;M
+              </h2>
+              <h2 class="text-white text-7xl mb-3">
+                L&nbsp;A&nbsp;N&nbsp;D&nbsp;S&nbsp;C&nbsp;A&nbsp;P&nbsp;E
+              </h2>
+              <p
+                class="font-normal font-secondary w-[260px] mt-5 leading-6 mx-auto md:w-[400px]"
+              >
+                Duis aute irure dolor in reprehenderit in voluptate veli esse
+                cillum dolore eu fugiat nulla pariatur ecepteur sint occaeca.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img
+              src="../assets/bg/h1-img-12.jpg"
+              class="d-block w-100 c-img"
+              alt="..."
+            />
+            <div
+              class="carousel-caption top-24 -left-7 ml-5 md:top-60 md:-left-60"
+            >
+              <h2 class="text-white text-7xl">
+                C&nbsp;O&nbsp;N&nbsp;T&nbsp;E&nbsp;M&nbsp;P&nbsp;O&nbsp;R&nbsp;A&nbsp;R&nbsp;Y
+              </h2>
+              <h2 class="text-white text-7xl">
+                U&nbsp;R&nbsp;B&nbsp;A&nbsp;N&nbsp;I&nbsp;S&nbsp;M
+              </h2>
+              <h2 class="text-white text-7xl mb-3">
+                L&nbsp;A&nbsp;N&nbsp;D&nbsp;S&nbsp;C&nbsp;A&nbsp;P&nbsp;E
+              </h2>
+              <p
+                class="font-normal font-secondary w-[260px] mt-5 leading-6 mx-auto md:w-[400px]"
+              >
+                Duis aute irure dolor in reprehenderit in voluptate veli esse
+                cillum dolore eu fugiat nulla pariatur ecepteur sint occaeca.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--END CAROUSEL SLIDER-->
+      <!--BEGIN GRID WIDGET ELEMENT-->
+      <div
+        class="grid relative border-solid border border-t-[#302e2c] border-l-[#302e2c] md:grid-cols-2"
+      >
+        <!--element 1-->
+        <article class="relative inline-block w-full align-top min-h-[1px]">
+          <div class="relative w-full h-full overflow-hidden">
+            <div
+              class="block w-full h-full align-baseline m-0 p-0 border-none outline-none"
+            >
+              <a
+                class="block w-full h-full text-[#8E7861] transition-colors"
+                itemprop="url"
+                hre="#"
+                target="_self"
+              >
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="960"
+                  height="250"
+                  src="../assets/images/h1-port-img-1.jpg"
+                  class="size-full object-cover scale-[1.06] translate-x-0 align-middle"
+                  alt="s"
+                  srcset="
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-1.jpg         960w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-1-600x156.jpg 600w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-1-800x208.jpg 800w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-1-300x78.jpg  300w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-1-768x200.jpg 768w
+                  "
+                  sizes="(max-width: 960px) 100vw, 960px"
+                />
+              </a>
+            </div>
+            <div
+              class="absolute -left-[1px] -top-[1px] w-full h-full flex items-center bg-black transition-opacity duration-500 ease-in-out delay-0 overflow-hidden border border-solid border-[#302e2c;] hover:opacity-0"
+            >
+              <span
+                class="absolute text-[#211e19] text-[200px] font-[100] translate-x-0 transition-opacity ease-in-out duration-300 right-[67px] bottom-[50px]"
+              >
+                01
+              </span>
+              <h4
+                itemprop="name"
+                class="m-0 flex items-center text-5xl font-medium tracking-wider"
+              >
+                <a itemprop="url" class="pl-10 mt-3" hre="#" target="_self">
+                  G13 House
+                </a>
+                <svg
+                  class="mt-0 mr-0 mb-1 ml-5 text-[#8E7861]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="10"
+                >
+                  <g>
+                    <path d="M30 4.5H0"></path>
+                    <path d="m 35.07 4.5 l -8.75 5 V -0.3 Z"></path>
+                  </g>
+                </svg>
+              </h4>
+            </div>
+          </div>
+        </article>
+        <!--element 2-->
+        <article class="relative inline-block w-full align-top min-h-[1px]">
+          <div class="relative w-full h-full overflow-hidden">
+            <div
+              class="block w-full h-full align-baseline m-0 p-0 border-none outline-none"
+            >
+              <a
+                class="block w-full h-full text-[#8E7861] transition-colors"
+                itemprop="url"
+                href="#"
+                target="_self"
+              >
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="960"
+                  height="250"
+                  src="https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-5.jpg"
+                  class="size-full object-cover scale-[1.06] translate-x-0 align-middle"
+                  alt="s"
+                  srcset="
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-5.jpg         960w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-5-600x156.jpg 600w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-5-800x208.jpg 800w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-5-300x78.jpg  300w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-5-768x200.jpg 768w
+                  "
+                  sizes="(max-width: 960px) 100vw, 960px"
+                />
+              </a>
+            </div>
+            <div
+              class="absolute -left-[1px] -top-[1px] w-full h-full flex items-center bg-black transition-opacity duration-500 ease-in-out delay-0 overflow-hidden border border-solid border-[#302e2c;] hover:opacity-0"
+            >
+              <span
+                class="absolute text-[#211e19] text-[200px] font-[100] translate-x-0 transition-opacity ease-in-out duration-300 right-[67px] bottom-[50px]"
+              >
+                02
+              </span>
+              <h4
+                itemprop="name"
+                class="m-0 flex items-center text-5xl font-medium tracking-wider"
+              >
+                <a itemprop="url" class="pl-10 mt-3" href="#" target="_self">
+                  Jade House
+                </a>
+                <svg
+                  class="qodef-svg--arrow-right"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="10"
+                >
+                  <g>
+                    <path d="M30 4.5H0"></path>
+                    <path d="m 35.07 4.5 l -8.75 5 V -0.3 Z"></path>
+                  </g>
+                </svg>
+              </h4>
+            </div>
+          </div>
+        </article>
+        <!--element 3-->
+        <article class="relative inline-block w-full align-top min-h-[1px]">
+          <div class="relative w-full h-full overflow-hidden">
+            <div
+              class="block w-full h-full align-baseline m-0 p-0 border-none outline-none"
+            >
+              <a
+                class="block w-full h-full text-[#8E7861] transition-colors"
+                itemprop="url"
+                href="#"
+                target="_self"
+              >
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="960"
+                  height="250"
+                  src="https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-2.jpg"
+                  class="size-full object-cover scale-[1.06] translate-x-0 align-middle"
+                  alt="s"
+                  srcset="
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-2.jpg         960w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-2-600x156.jpg 600w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-2-800x208.jpg 800w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-2-300x78.jpg  300w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-2-768x200.jpg 768w
+                  "
+                  sizes="(max-width: 960px) 100vw, 960px"
+                />
+              </a>
+            </div>
+            <div
+              class="absolute -left-[1px] -top-[1px] w-full h-full flex items-center bg-black transition-opacity duration-500 ease-in-out delay-0 overflow-hidden border border-solid border-[#302e2c;] hover:opacity-0"
+            >
+              <span
+                class="absolute text-[#211e19] text-[200px] font-[100] translate-x-0 transition-opacity ease-in-out duration-300 right-[67px] bottom-[50px]"
+              >
+                03
+              </span>
+              <h4
+                itemprop="name"
+                class="m-0 flex items-center text-5xl font-medium tracking-wider"
+              >
+                <a itemprop="url" class="pl-10 mt-3" href="#" target="_self">
+                  Art Space
+                </a>
+                <svg
+                  class="qodef-svg--arrow-right"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="10"
+                >
+                  <g>
+                    <path d="M30 4.5H0"></path>
+                    <path d="m 35.07 4.5 l -8.75 5 V -0.3 Z"></path>
+                  </g>
+                </svg>
+              </h4>
+            </div>
+          </div>
+        </article>
+        <!--element 4-->
+        <article class="relative inline-block w-full align-top min-h-[1px]">
+          <div class="relative w-full h-full overflow-hidden">
+            <div
+              class="block w-full h-full align-baseline m-0 p-0 border-none outline-none"
+            >
+              <a
+                class="block w-full h-full text-[#8E7861] transition-colors"
+                itemprop="url"
+                href="#"
+                target="_self"
+              >
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="960"
+                  height="250"
+                  src="https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-4.jpg"
+                  class="size-full object-cover scale-[1.06] translate-x-0 align-middle"
+                  alt="s"
+                  srcset="
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-4.jpg         960w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-4-600x156.jpg 600w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-4-800x208.jpg 800w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-4-300x78.jpg  300w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-4-768x200.jpg 768w
+                  "
+                  sizes="(max-width: 960px) 100vw, 960px"
+                />
+              </a>
+            </div>
+            <div
+              class="absolute -left-[1px] -top-[1px] w-full h-full flex items-center bg-black transition-opacity duration-500 ease-in-out delay-0 overflow-hidden border border-solid border-[#302e2c;] hover:opacity-0"
+            >
+              <span
+                class="absolute text-[#211e19] text-[200px] font-[100] translate-x-0 transition-opacity ease-in-out duration-300 right-[67px] bottom-[50px]"
+              >
+                04
+              </span>
+              <h4
+                itemprop="name"
+                class="m-0 flex items-center text-5xl font-medium tracking-wider"
+              >
+                <a itemprop="url" class="pl-10 mt-3" href="#" target="_self">
+                  3d Modeling
+                </a>
+                <svg
+                  class="qodef-svg--arrow-right"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="10"
+                >
+                  <g>
+                    <path d="M30 4.5H0"></path>
+                    <path d="m 35.07 4.5 l -8.75 5 V -0.3 Z"></path>
+                  </g>
+                </svg>
+              </h4>
+            </div>
+          </div>
+        </article>
+        <!--element 5-->
+        <article class="relative inline-block w-full align-top min-h-[1px]">
+          <div class="relative w-full h-full overflow-hidden">
+            <div
+              class="block w-full h-full align-baseline m-0 p-0 border-none outline-none"
+            >
+              <a
+                class="block w-full h-full text-[#8E7861] transition-colors"
+                itemprop="url"
+                href="#"
+                target="_self"
+              >
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="960"
+                  height="250"
+                  src="https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-3.jpg"
+                  class="size-full object-cover scale-[1.06] translate-x-0 align-middle"
+                  alt="s"
+                  srcset="
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-3.jpg         960w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-3-600x156.jpg 600w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-3-800x208.jpg 800w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-3-300x78.jpg  300w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-3-768x200.jpg 768w
+                  "
+                  sizes="(max-width: 960px) 100vw, 960px"
+                />
+              </a>
+            </div>
+            <div
+              class="absolute -left-[1px] -top-[1px] w-full h-full flex items-center bg-black transition-opacity duration-500 ease-in-out delay-0 overflow-hidden border border-solid border-[#302e2c;] hover:opacity-0"
+            >
+              <span
+                class="absolute text-[#211e19] text-[200px] font-[100] translate-x-0 transition-opacity ease-in-out duration-300 right-[67px] bottom-[50px]"
+              >
+                05
+              </span>
+              <h4
+                itemprop="name"
+                class="m-0 flex items-center text-5xl font-medium tracking-wider"
+              >
+                <a itemprop="url" class="pl-10 mt-3" href="#" target="_self">
+                  Arca Studio
+                </a>
+                <svg
+                  class="qodef-svg--arrow-right"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="10"
+                >
+                  <g>
+                    <path d="M30 4.5H0"></path>
+                    <path d="m 35.07 4.5 l -8.75 5 V -0.3 Z"></path>
+                  </g>
+                </svg>
+              </h4>
+            </div>
+          </div>
+        </article>
+        <!--element 6-->
+        <article class="relative inline-block w-full align-top min-h-[1px]">
+          <div class="relative w-full h-full overflow-hidden">
+            <div
+              class="block w-full h-full align-baseline m-0 p-0 border-none outline-none"
+            >
+              <a
+                class="block w-full h-full text-[#8E7861] transition-colors"
+                itemprop="url"
+                href="#"
+                target="_self"
+              >
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  width="960"
+                  height="250"
+                  src="https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-6.jpg"
+                  class="size-full object-cover scale-[1.06] translate-x-0 align-middle"
+                  alt="d"
+                  srcset="
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-6.jpg         960w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-6-600x156.jpg 600w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-6-800x208.jpg 800w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-6-300x78.jpg  300w,
+                    https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-port-img-6-768x200.jpg 768w
+                  "
+                  sizes="(max-width: 960px) 100vw, 960px"
+                />
+              </a>
+            </div>
+            <div
+              class="absolute -left-[1px] -top-[1px] w-full h-full flex items-center bg-black transition-opacity duration-500 ease-in-out delay-0 overflow-hidden border border-solid border-[#302e2c;] hover:opacity-0"
+            >
+              <span
+                class="absolute text-[#211e19] text-[200px] font-[100] translate-x-0 transition-opacity ease-in-out duration-300 right-[67px] bottom-[50px]"
+              >
+                06
+              </span>
+              <h4
+                itemprop="name"
+                class="m-0 flex items-center text-5xl font-medium tracking-wider"
+              >
+                <a itemprop="url" class="pl-10 mt-3" href="#" target="_self">
+                  Light &amp; shapes
+                </a>
+                <svg
+                  class="qodef-svg--arrow-right"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="10"
+                >
+                  <g>
+                    <path d="M30 4.5H0"></path>
+                    <path d="m 35.07 4.5 l -8.75 5 V -0.3 Z"></path>
+                  </g>
+                </svg>
+              </h4>
+            </div>
+          </div>
+        </article>
+      </div>
+      <!--END GRID WIDGET ELEMENT-->
+
+      <section class="w-full relative grid md:grid-cols-2 pl-20">
+        <div class="py-40 pr-28">
+          <h2 class="text-4xl uppercase font-medium tracking-wider">
+            start with idea
+          </h2>
+          <p class="my-3 text-[#ccc] leading-7">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non provident sunt in culpa qui officia deserunt.
+          </p>
+
+          <p class="my-3 text-[#ccc] leading-7">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus.
+          </p>
+          <div class="mt-4">
+            <a class="" href="#" target="_self">
+              <span
+                class="py-2 px-14 border border-solid border-[#8E7861] bg-transparent "
+                >Explore</span
+              >
+            </a>
+          </div>
+        </div>
+
+        <div class="h-auto max-w-full">
+          <img
+            loading="lazy"
+            decoding="async"
+            width="740"
+            height="645"
+            src="../assets/bg/h1-img-3.png"
+            class="size-full"
+            alt="f"
+            srcset="
+              https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-img-3.png         740w,
+              https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-img-3-600x523.png 600w,
+              https://tadao.qodeinteractive.com/wp-content/uploads/2023/04/h1-img-3-300x261.png 300w
+            "
+            sizes="(max-width: 740px) 100vw, 740px"
+          />
+        </div>
+      </section>
+      <section class="px-5 ">
+        <div class="flex mx-auto relative">
+          <div class="w-1/2 md">
+
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+    <!--bootstrap cdn link-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

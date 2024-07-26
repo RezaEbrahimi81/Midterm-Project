@@ -3,7 +3,9 @@
         "Décor",
         "Jost",
         "khand",
+        "pgdn",
         "Tadao",
         "tailwindcss"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
